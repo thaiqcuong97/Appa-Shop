@@ -35,9 +35,9 @@
 .ant-select-dropdown {
   padding: 10px 20px 10px 20px;
   border-top: 1px solid $turquoise;
-  border-right: 1px solid $whitesmo;
-  border-left: 1px solid $whitesmo;
-  border-bottom: 1px solid $whitesmo;
+  border-right: 1px solid $whitecomb;
+  border-left: 1px solid $whitecomb;
+  border-bottom: 1px solid $whitecomb;
   border-radius: 0;
 
   box-shadow: none;
@@ -57,7 +57,7 @@
 }
 
 .ant-select-item-option:nth-child(1n) {
-  border-bottom: 1px solid $whitesmo;
+  border-bottom: 1px solid $whitecomb;
   &:last-child {
     border-bottom: none;
   }

@@ -7,10 +7,9 @@
 .top-bar {
   padding: 4px 0px;
   border-top: 3px solid;
-  border-bottom: 1px solid $whitesmo;
+  border-bottom: 1px solid $whitecomb;
 
   font-family: $font-text;
-  background: $whitesmoke;
   .row {
     &.-justify-content {
       justify-content: flex-end;
@@ -53,6 +52,27 @@
         border-color: transparent;
         background: transparent;
       }
+    }
+  }
+}
+
+.top-bar-content {
+  padding: 40px 0;
+  .-col {
+    display: flex;
+  }
+  &__logo {
+    display: flex;
+    flex: 1;
+  }
+  &__search {
+    flex: 2;
+    margin-top: 8px;
+  }
+  &__cart {
+    flex: 1;
+    img {
+      width: 40px;
     }
   }
 }

@@ -8,7 +8,7 @@
 
 .top-bar,
 .ant-select-dropdown {
-  border-top-color: #00d0dd;
+  border-top-color: $turquoise;
 }
 
 a:hover,
@@ -31,6 +31,7 @@ svg {
     position: absolute;
     top: 8px;
     right: -5px;
+    z-index: 10;
 
     width: 1px;
     height: 18px;
