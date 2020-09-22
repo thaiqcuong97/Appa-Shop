@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Select, Badge } from "antd";
 
 import logo from '../../../assets/image/logo.png';
-import iconShipping from '../../../assets/image/shopping-bags.png'
+import iconShipping from '../../../assets/image/bag.svg'
 import routes from '../../../constants';
 import { InputCustom } from '../../InputCustom';
 

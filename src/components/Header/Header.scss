@@ -68,9 +68,11 @@
   &__search {
     flex: 2;
     margin-top: 8px;
+    padding-right: 76px;
   }
   &__cart {
-    flex: 1;
+    flex: 0;
+    margin-top: 12px;
     img {
       width: 40px;
     }
