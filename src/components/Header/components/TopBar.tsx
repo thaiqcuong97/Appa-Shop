@@ -47,19 +47,19 @@ function TopBar() {
           </div>
           <div className="col l-6 m-6 c-12">
             <div className="row -justify-content">
-              <div className="top-bar__shopping-cart col">
+              <div className="top-bar__shopping-cart">
                 <Link to="" className="my-cart">
                   <FontAwesomeIcon icon={faShoppingBasket} />
                   My cart
                 </Link>
               </div>
-              <div className="top-bar__my-wishlist col">
+              <div className="top-bar__my-wishlist ">
                 <Link to="" className="tini-wishlist">
                   <FontAwesomeIcon icon={faHeart} />
                   Wishlist
                 </Link>
               </div>
-              <div className="top-bar__my-account col">
+              <div className="top-bar__my-account ">
                 <Button
                   type="primary"
                   onClick={showModal}

@@ -24,3 +24,16 @@ a:hover,
 svg {
   margin-right: 6px;
 }
+
+@mixin border-left {
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 8px;
+    right: -5px;
+
+    width: 1px;
+    height: 18px;
+    background: $darkgray;
+  }
+}
