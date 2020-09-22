@@ -4,8 +4,6 @@ import 'antd/dist/antd.css';
 
 import './ButtonSelect.scss';
 
-const { Option } = Select;
-
 function handleChange(value: string) {
   console.log(`selected ${value}`);
 }

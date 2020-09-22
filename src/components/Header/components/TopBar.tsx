@@ -28,7 +28,7 @@ function TopBar() {
       <div className="grid wide container">
         <div className="row">
           <div className="col l-6 m-6 c-12">
-            <div className="row">
+            <div className="row ">
               <div className="top-bar__change-language">
                 <ButtonSelect defaultValue="English" dropdownMatchSelectWidth={150}>
                   {optionEnglish.map((item, index) => (

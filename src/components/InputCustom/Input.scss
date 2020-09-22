@@ -1,0 +1,51 @@
+@import '../../assets/styles/font';
+@import '../../assets/styles/general';
+
+.top-bar-content {
+  .ant-input-group {
+    display: flex;
+    border: 2px solid $turquoise;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    .ant-input {
+      border: none;
+      .ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .ant-select-selector {
+      height: 45px;
+      border-right: none;
+      .ant-select-selection-item {
+        padding-right: 30px;
+        line-height: 45px;
+        font-weight: $font-weight-md;
+      }
+    }
+    .ant-input {
+      width: 100% !important;
+      padding-top: 7px;
+      border-left: none;
+      text-align: left;
+    }
+  }
+  .ant-select {
+    position: relative;
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      z-index: 10;
+
+      width: 1px;
+      height: 20px;
+      background: $darkgray;
+    }
+  }
+}
