@@ -1,9 +1,10 @@
 import React from 'react';
+import MainLayout from '../../layout/MainLayout';
 
 NotFound.propTypes = {};
 
 function NotFound() {
-  return <div>Oop... Not found</div>;
+  return <MainLayout>Oop... Not found</MainLayout>;
 }
 
 export default NotFound;

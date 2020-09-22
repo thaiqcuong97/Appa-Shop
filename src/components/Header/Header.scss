@@ -1,0 +1,46 @@
+@import '../../assets/styles/color.scss';
+@import '../../assets/styles/font.scss';
+
+@import '../../assets/styles/grid.scss';
+
+.top-bar {
+  padding: 4px 0px;
+  border-top: 3px solid;
+
+  font-family: $font-text;
+  background: $whitesmoke;
+  &__change-language {
+    margin-right: 5px;
+  }
+  .row {
+    &.-justify-content {
+      justify-content: flex-end;
+    }
+  }
+  &__shopping-cart,
+  &__my-wishlist {
+    a {
+      color: $darkgray;
+    }
+  }
+  &__my-account {
+    .ant-btn {
+      border: none;
+      box-shadow: none;
+
+      background: transparent;
+
+      text-shadow: none;
+      font-family: $font-text;
+      &:hover {
+        border-color: transparent;
+        color: $turquoise;
+        background: transparent;
+      }
+      &:focus {
+        border-color: transparent;
+        background: transparent;
+      }
+    }
+  }
+}

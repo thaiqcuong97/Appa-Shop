@@ -1,0 +1,72 @@
+@import '../../assets/styles/color.scss';
+@import '../../assets/styles/font.scss';
+@import '../../assets/styles/general.scss';
+
+.top-bar {
+  .container {
+    .ant-select-selector {
+      .ant-select-selection-item {
+        color: $darkgray;
+        line-height: 35px;
+      }
+    }
+    .ant-select-arrow {
+      top: 56%;
+      padding-left: 5px;
+      .anticon-down {
+        font-size: 10px;
+      }
+    }
+  }
+}
+.top-bar {
+  .container {
+    .ant-select:hover {
+      .ant-select-selection-item {
+        color: $turquoise;
+      }
+      .ant-select-arrow {
+        color: $turquoise;
+      }
+    }
+  }
+}
+
+.ant-select-dropdown {
+  padding: 10px 20px 10px 20px;
+  border-top: 1px solid $turquoise;
+  border-right: 1px solid $whitesmo;
+  border-left: 1px solid $whitesmo;
+  border-bottom: 1px solid $whitesmo;
+  border-radius: 0;
+
+  box-shadow: none;
+  text-align: center;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  font-weight: $font-weight-sm;
+  background-color: transparent;
+}
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: transparent;
+}
+
+.ant-select-item-option:nth-child(1n) {
+  border-bottom: 1px solid $whitesmo;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.ant-select-item-option-content {
+  transition: all 200ms ease 0s;
+  -webkit-transition: all 200ms ease 0s;
+  &:hover {
+    margin-left: 5px;
+    color: $turquoise;
+  }
+}
