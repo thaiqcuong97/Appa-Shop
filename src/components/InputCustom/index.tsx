@@ -24,5 +24,5 @@ export const InputCustom = ({
         style={{ width: 200 }}
       />
     </Input.Group>
-  )
+  );
 };
