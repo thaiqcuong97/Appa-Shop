@@ -1,0 +1,39 @@
+@import '../../assets/styles/color.scss';
+@import '../../assets/styles/font.scss';
+
+.appa-shop {
+  font-family: $font-text;
+  line-height: 35px;
+}
+
+.top-bar,
+.ant-select-dropdown {
+  border-top-color: #00d0dd;
+}
+
+a:hover,
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: $turquoise;
+}
+
+.ant-btn,
+.ant-btn-primary:focus {
+  color: $darkgray;
+}
+
+svg {
+  margin-right: 6px;
+}
+
+@mixin border-left {
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 8px;
+    right: -5px;
+
+    width: 1px;
+    height: 18px;
+    background: $darkgray;
+  }
+}

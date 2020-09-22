@@ -1,14 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import routes from '../../constants';
 
-export default function Header() {
+
+import './Header.scss';
+import '../../assets/styles/general.scss';
+import { TopBar, TopNav } from './components'
+
+function Header() {
   return (
     <header>
-      <Link to={routes.HOME} >Home</Link>
-      <Link to={routes.PRODUCT}> product </Link>
+      <TopBar />
+      <TopNav />
     </header>
   );
 }
 
+export default Header;
 
