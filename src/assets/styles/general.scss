@@ -4,6 +4,17 @@
 .appa-shop {
   font-family: $font-text;
   line-height: 35px;
+  ol,
+  ul,
+  dl,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
 }
 
 .top-bar,
@@ -36,5 +47,75 @@ svg {
     width: 1px;
     height: 18px;
     background: $darkgray;
+  }
+}
+
+// menu sub categories
+
+.nav-menu__dropdown:hover {
+  .sub-categories {
+    opacity: 1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+.nav-menu__dropdown {
+  .sub-categories {
+    position: absolute;
+
+    display: flex;
+    z-index: 1;
+
+    margin-top: -1px;
+    padding: 10px 20px 30px;
+    border-top: 2px solid $turquoise;
+    list-style: none;
+
+    background: $white;
+
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0, -0.72, 0, 1),
+      opacity 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s cubic-bezier(0, -0.72, 0, 1),
+      opacity 0.3s ease-in-out;
+    -moz-transition: transform 0.3s cubic-bezier(0, -0.72, 0, 1),
+      opacity 0.3s ease-in-out;
+    -ms-transition: transform 0.3s cubic-bezier(0, -0.72, 0, 1),
+      opacity 0.3s ease-in-out;
+    -o-transition: transform 0.3s cubic-bezier(0, -0.72, 0, 1),
+      opacity 0.3s ease-in-out;
+    transform: translateY(8rem);
+    -webkit-transform: translateY(8rem);
+    -moz-transform: translateY(8rem);
+    -ms-transform: translateY(8rem);
+    -o-transform: translateY(8rem);
+    &__content {
+      padding: 0 20px;
+      text-transform: none;
+      text-align: left;
+      h3 {
+        font-weight: $font-weight-bg;
+        padding: 0 20px;
+      }
+      &--option {
+        line-height: 2;
+        &--item {
+          a {
+            color: $darkgray;
+          }
+          &:hover {
+            a {
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
   }
 }

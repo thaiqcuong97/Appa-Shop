@@ -16,5 +16,11 @@
     "jsx": "react"
   },
   "include": ["src"],
-  "typeRoots": ["../node_modules/@types", "../@types"]
+  "typeRoots": ["../node_modules/@types", "../@types"],
+  "exclude": [
+    "./coverage/**/*",
+    "./dist/**/*",
+    "./node_modules/**/*",
+    "./*.config.js"
+  ]
 }
