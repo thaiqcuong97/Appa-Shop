@@ -93,6 +93,7 @@
 
       width: 65%;
       margin-top: 1px;
+      margin-right: 80px;
       padding-right: 100px;
 
       font-family: $font-title;
@@ -119,16 +120,19 @@
           -moz-transition: 0.2s ease-in;
           -ms-transition: 0.2s ease-in;
           -o-transition: 0.2s ease-in;
-          &:hover {
-            color: $dark;
-          }
         }
       }
       .active {
         color: $dark;
       }
-      a {
+      a,
+      span {
         color: $white;
+        padding: 0 20px;
+        cursor: pointer;
+        &:hover {
+          color: $dark;
+        }
       }
     }
     &--social-network {

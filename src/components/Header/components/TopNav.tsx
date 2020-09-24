@@ -19,12 +19,12 @@ function TopNav() {
         <div className="top-nav__content">
           <div className="top-nav__content--nav-menu">
             <ul className="nav-menu">
-              <li><NavLink to={routes.HOME}>Home</NavLink></li>
+              <li><NavLink className="mg-20" exact to={routes.HOME}>Home</NavLink></li>
               <li><NavLink to={routes.PRODUCT}>Product</NavLink></li>
               <li className="nav-menu__dropdown">
-                <NavLink to={routes.CATALOG}>
+                <span>
                   Catalog
-                </NavLink>
+                </span>
                 <ul className="sub-categories">
                   <li className="sub-categories__content ">
                     <h3>Men&apos;s </h3>
@@ -56,7 +56,7 @@ function TopNav() {
                 </ul>
               </li>
               <li><NavLink to={routes.BLOG}>Blog</NavLink></li>
-              <li><NavLink to={routes.CONTACT}>Contact us</NavLink></li>
+              <li><NavLink to={routes.CONTACT}>Contact</NavLink></li>
             </ul>
           </div>
           <div className="top-nav__content--social-network">
