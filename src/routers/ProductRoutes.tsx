@@ -6,7 +6,7 @@ import routes from '../constants';
 export default function ProductRoutes() {
   return (
     <Switch>
-      <Route path={routes.PRODUCT} component={Product} />
+      <Route exact path={routes.PRODUCT} component={Product} />
     </Switch>
   );
 }
