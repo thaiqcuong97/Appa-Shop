@@ -1,22 +1,6 @@
 @import '../../assets/styles/color.scss';
 @import '../../assets/styles/font.scss';
 
-.appa-shop {
-  font-family: $font-text;
-  line-height: 35px;
-  ol,
-  ul,
-  dl,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-}
-
 .top-bar,
 .ant-select-dropdown {
   border-top-color: $turquoise;
@@ -55,10 +39,10 @@ svg {
 }
 
 // menu sub categories
-
 .nav-menu__dropdown:hover {
   .sub-categories {
     opacity: 1;
+    z-index: 10;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
@@ -74,7 +58,7 @@ svg {
     position: absolute;
 
     display: flex;
-    z-index: 1;
+    z-index: -1;
 
     margin-top: -1px;
     padding: 10px 20px 30px;

@@ -157,7 +157,7 @@ Prefix class: - c - mobile
 }
 
 /* >= Tablet */
-@media (min-width: 740px) {
+@media (min-width: $SM) {
   .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -277,7 +277,7 @@ Prefix class: - c - mobile
 }
 
 /* PC medium resolution > */
-@media (min-width: 1113px) {
+@media (min-width: $MD-XL) {
   .row {
     margin-left: -12px;
     margin-right: -12px;
@@ -410,14 +410,14 @@ Prefix class: - c - mobile
 }
 
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: $SM) and (max-width: $MD - 1px) {
   .wide {
     width: 644px;
   }
 }
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: $MD) and (max-width: $XL - 1px) {
   .wide {
     width: 984px;
     .row {

@@ -8,3 +8,4 @@ export default function Product() {
     </MainLayout>
   );
 }
+// code chạy đúng rồi mà, chỉ có m hiểu sai thôi, cái product của m đây mà, m có hiển thị cc gì đâu?chũ product to đùng kìa, sản phẩm đâu ra

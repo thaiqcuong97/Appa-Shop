@@ -5,58 +5,65 @@
 @import '../../assets/styles/general.scss';
 
 .top-bar {
-  padding: 4px 0px;
+  padding: 4px 0 0 0;
   border-top: 3px solid;
   border-bottom: 1px solid $whitecomb;
 
   font-family: $font-text;
-  .row {
-    &.-justify-content {
-      justify-content: flex-end;
+  .-row {
+    padding: 0 15px 0 5px;
+  }
+  &_translate {
+    &--change-language {
+      position: relative;
+      margin-right: 5px;
+      @include border-left;
     }
   }
-  &__change-language {
-    position: relative;
-    margin-right: 5px;
-    @include border-left;
-  }
-  &__my-wishlist {
-    margin-left: 4px;
-  }
-  &__shopping-cart,
-  &__my-wishlist {
-    position: relative;
-    padding-right: 6px;
-    margin-right: 10px;
-    a {
-      color: $darkgray;
+
+  .top-bar__use {
+    margin: 0 auto;
+    margin-right: 0;
+    &--my-wishlist {
+      margin-left: 4px;
     }
-    @include border-left;
-  }
-  &__my-account {
-    .ant-btn {
-      padding: 0 6px;
-      border: none;
-      box-shadow: none;
-
-      background: transparent;
-
-      text-shadow: none;
-      font-family: $font-text;
-      &:hover {
-        border-color: transparent;
-        color: $turquoise;
-        background: transparent;
+    &--shopping-cart,
+    &--my-wishlist {
+      position: relative;
+      padding-right: 6px;
+      margin-right: 10px;
+      line-height: 31px;
+      a {
+        color: $darkgray;
       }
-      &:focus {
-        border-color: transparent;
+      @include border-left;
+    }
+    &--my-account {
+      .ant-btn {
+        padding: 0 6px;
+        border: none;
+        box-shadow: none;
+
         background: transparent;
+
+        text-shadow: none;
+        font-family: $font-text;
+        &:hover {
+          border-color: transparent;
+          color: $turquoise;
+          background: transparent;
+        }
+        &:focus {
+          border-color: transparent;
+          background: transparent;
+        }
       }
     }
   }
 }
 
 .top-bar-content {
+  position: relative;
   padding: 40px 0;
   .-col {
     display: flex;
@@ -64,6 +71,8 @@
   &__logo {
     display: flex;
     flex: 1;
+
+    margin-right: 50px;
   }
   &__search {
     flex: 2;
@@ -94,7 +103,7 @@
       width: 65%;
 
       padding-right: 100px;
-      margin: 1px -20px 0 0;
+      margin: 1px 62px 0 0;
       font-family: $font-title;
       font-size: 18px;
       font-weight: $font-weight-md;
@@ -119,6 +128,9 @@
           -moz-transition: 0.2s ease-in;
           -ms-transition: 0.2s ease-in;
           -o-transition: 0.2s ease-in;
+        }
+        svg {
+          display: none;
         }
       }
       .active {
@@ -149,3 +161,194 @@
     }
   }
 }
+// reponseve
+// .mobile__menu {
+//   display: none;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   transform: translate(15px, 128px);
+//   -webkit-transform: translate(15px, 128px);
+//   -moz-transform: translate(15px, 128px);
+//   -ms-transform: translate(15px, 128px);
+//   -o-transform: translate(15px, 128px);
+//   font-size: 28px;
+//   color: $turquoise;
+//   cursor: pointer;
+// }
+
+// @media (max-width: 740px) {
+//   .top-bar {
+//     .-row {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       align-content: center;
+
+//       padding: 0 0 0 10px;
+//       .top-bar_translate {
+//         margin-bottom: 5px;
+//       }
+//     }
+//   }
+//   .top-bar-content {
+//     &__logo {
+//       display: block;
+//       margin: 0;
+//     }
+//     &__search {
+//       display: none;
+//     }
+//   }
+//   .top-nav {
+//     .top-nav__content {
+//       display: block;
+//       justify-content: center;
+//       height: 0;
+//       &--social-network {
+//         display: none;
+//       }
+//       &--nav-menu {
+//         display: block;
+//         margin: 0;
+//         a,
+//         span {
+//           color: $dark;
+//           &:hover {
+//             color: $turquoise;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .nav-menu {
+//     position: absolute;
+//     top: 3px;
+//     left: -100%;
+//     display: flex;
+//     flex-direction: column;
+//     width: 240px;
+//     height: 100%;
+//     background: rebeccapurple;
+//     opacity: 1;
+//     transition: all 0.8s ease;
+//     -webkit-transition: all 0.8s ease;
+//     -moz-transition: all 0.8s ease;
+//     -ms-transition: all 0.8s ease;
+//     -o-transition: all 0.8s ease;
+//   }
+//   .nav-menu.active {
+//     left: 0;
+//     z-index: 10;
+
+//     padding-top: 80px;
+//     background: $white;
+//     border-right: 1px solid $whitecomb;
+
+//     align-items: start;
+//     text-align: start;
+
+//     opacity: 1;
+//     transition: all 0.8s ease;
+//     -webkit-transition: all 0.8s ease;
+//     -moz-transition: all 0.8s ease;
+//     -ms-transition: all 0.8s ease;
+//     -o-transition: all 0.8s ease;
+//     .mg-20 {
+//       margin-left: 0;
+//     }
+//     li {
+//       border-bottom: 1px solid $whitecomb;
+//       margin: 0 15px;
+//     }
+//     svg {
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//       font-size: 26px;
+
+//       display: block;
+//       cursor: pointer;
+//       transform: translate(-8px, 10px);
+//     }
+//     .active {
+//       color: $turquoise;
+//     }
+
+//     .nav-menu__dropdown:hover {
+//       .sub-categories {
+//         opacity: 1;
+//         box-shadow: none;
+//         transform: none;
+//         -webkit-transform: none;
+//         -moz-transform: none;
+//         -ms-transform: none;
+//         -o-transform: none;
+//       }
+//     }
+//     .nav-menu__dropdown {
+//       .sub-categories {
+//         position: static;
+//         flex-direction: column;
+//         padding: 0 0 0 8px;
+//         border-top: none;
+//         box-shadow: none;
+//         background: none;
+
+//         opacity: 1;
+//         transform: none;
+//         -webkit-transform: none;
+//         -moz-transform: none;
+//         -ms-transform: none;
+//         -o-transform: none;
+//         transition: none;
+//         -webkit-transition: none;
+//         -moz-transition: none;
+//         -ms-transition: none;
+//         -o-transition: none;
+//         &__content {
+//           padding: 0;
+//           margin: 0;
+
+//           text-transform: none;
+//           text-align: left;
+//           h3 {
+//             position: relative;
+//             font-weight: $font-weight-bg;
+//             padding: 0 20px;
+//             &::after {
+//               content: '+';
+//               position: absolute;
+//               top: 1px;
+//               right: 0;
+//               font-size: 25px;
+//             }
+//           }
+//           &--option {
+//             line-height: 2;
+//             &--item {
+//               a {
+//                 color: $darkgray;
+//               }
+//               &:hover {
+//                 a {
+//                   color: $dark;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+// m code thi k hieu minh dang lam gi, phai biet tnao ms code dc, m lam the n ay la khi nao code xong m cung co bug het. vi m k biet m muon lam gi va lam nhu tnao, cu code truoc roi tinh ri sao dc
+// .sub-categories__content--option.clicked {
+//   display: none;
+// }
+// .sub-categories__content--option {
+//   display: block;
+// }
+//   }
+//   .mobile__menu {
+//     display: block;
+//   }
+// }
