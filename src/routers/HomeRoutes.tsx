@@ -1,6 +1,7 @@
 import React from 'react';
-import Home from '../container/Home';
 import { Route, Switch } from 'react-router-dom';
+
+import Home from '../container/Home';
 import routes from '../constants';
 
 export default function HomeRoutes() {

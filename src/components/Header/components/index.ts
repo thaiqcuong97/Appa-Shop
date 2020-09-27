@@ -1,5 +1,5 @@
 import TopBar from './TopBar';
 import TopBarContent from './TopBarContent';
-import TopNav from './TopNav';
+import NavBar from './NavBar';
 
-export { TopBar, TopNav, TopBarContent };
+export { TopBar, NavBar, TopBarContent };
