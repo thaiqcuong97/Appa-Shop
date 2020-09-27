@@ -3,14 +3,17 @@ import React from 'react';
 import './Header.scss';
 import '../../assets/styles/general.scss';
 import { SearchList } from '../../apis/Product';
-import { TopBar, TopNav, TopBarContent } from './components'
+
+import routes from '../../constants';
+
+import { TopBar, NavBar, TopBarContent } from './components'
 
 function Header() {
   return (
     <header>
       <TopBar />
       <TopBarContent SearchList={SearchList} />
-      <TopNav />
+      <NavBar routes={routes} />
     </header>
   );
 }
