@@ -8,11 +8,11 @@ import {
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { routes } from '../../../constants';
 
 const iconNav = [faTwitter, faFacebookF, faGooglePlusG, faLinkedinIn];
 
-function TopNav({ routes }: any) {
-
+function TopNav() {
   const MenuItem = routes.MenuItem;
 
 
